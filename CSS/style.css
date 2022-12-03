@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("../fonts/bootstrap-icons.woff"),url("../fonts/bootstrap-icons.woff2");
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto",sans-serif;
+}
+
+body{
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+    background-color: #f5f5f5f5;
+}
+p{
+    color: #494949;
+}
+main{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffff;
+}
+main .CV-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 7px solid black;
+}
+main .CV-head .img-box{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+main .CV-head .img-box h3{
+    width: 300px;
+    font-size: 2.7em;
+}
+main .CV-head .post h3{
+    font-size: 1.7em;
+    font-weight: 500;
+}
+main .CV-body{
+    display: flex;
+    gap: 30px;
+}
+main .left{
+    width:60%;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+main .Experience .container{
+    padding-left: 10px;
+}
+main .Experience .box{
+    display: flex;
+    gap: 30px;
+}
+main .Experience .box .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .Experience .box .icon h5{
+    width: max-content;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+main .Experience .box .icon h5:first-child{
+    margin-bottom: 5px;
+    margin-top: 17px;
+}
+main .Experience .box .icon h5:last-child{
+    margin-top: 5px;
+}
+main .Experience .box .icon i{
+    font-size: 1.1em;
+}
+main .Experience .box .info h3{
+    font-size: 17px;
+
+}
+main .Experience .box .info>h3,main .Experience .box .info .det{
+    position: relative;
+}
+main .Experience .box .info .det h3{
+    font-weight: 200;
+    color: #32A1B5;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+main .Experience .box .info>h3::before{
+    content: "\2b";
+    position: absolute;
+    left: -23px;
+    top: -3px;
+    font-size: 1.2em;
+}
+main .Experience .box .info .det::before{
+    content: "";
+    width: 3px;
+    height: 120%;
+    position: absolute;
+    background-color: #000;
+    top: -10px;
+    left: -20px;
+}
+main .Experience .box .info .det p{
+    margin-top: 3px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+main .Education .box .info .det::before{
+    height: 150%;
+    top: -4px;
+}
+
+main .langue p{ 
+    margin-bottom: 20px;
+}
+main .interest .cont{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .interest .cont i{
+    font-size: 2em;
+    color: #32A1B5;
+}
+
+main .right{
+    width: 35%;
+}
+
+main .right .contact p i{
+    margin-right: 10px;
+}
+main .right .contact p a{
+    color: #494949;
+    text-decoration: none;
+}
+main .right .profile p{
+    margin-bottom: 20px;
+    text-indent: 20px;
+    line-height: 1.5;
+}
+main .skills .progress h4{
+    font-size: 16px;
+    font-weight: 300;
+    color: #494949;
+    margin-bottom: 5px;
+}
+main .skills .progress .progress-bar{
+    background-color: #EBEBEB;
+    /* border: 1px solid #32A1B5; */
+    height: 15px;
+    position: relative;
+}
+main .skills .progress .progress-bar::after{
+    content: "";
+    width: 80%;
+    height: 100%;
+    background-color: #32A1B5;
+    opacity: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+main .skills .progress:nth-child(4) .progress-bar::after{
+    width: 65%;
+}
+main .skills .progress:nth-child(6) .progress-bar::after{
+    width: 60%;
+}
+main .skills .progress:nth-child(5) .progress-bar::after{
+    width: 50%;
+}
+main .skills .progress:last-child .progress-bar::after{
+    width: 70%;
+}
+
+
+@media screen and (max-width:1000px) {
+    main .CV-head,main .CV-head .img-box{
+        flex-direction: column;
+        justify-content: center;
+    }
+    main .CV-head .img-box h3{
+        text-align: center;
+        margin:0;
+    }
+    main .CV-body{
+        flex-direction: column;
+    }
+    main .right{
+        width: 100%;
+    }
+    main .left{
+        width: 100%;
+        order: 1;
+    }
+}
+@media screen and (max-width:500px){
+    main .Experience .box{
+        margin-bottom: 20px;
+    }
+    .title{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:400px){
+    main{
+        width: 88%;
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+
+
