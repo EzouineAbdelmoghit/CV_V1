@@ -193,6 +193,9 @@ main .skills .progress:nth-child(5) .progress-bar::after{
 main .skills .progress:last-child .progress-bar::after{
     width: 70%;
 }
+.display{
+    display: none;
+}
 
 
 @media screen and (max-width:1000px) {
@@ -213,6 +216,12 @@ main .skills .progress:last-child .progress-bar::after{
     main .left{
         width: 100%;
         order: 1;
+    }
+    .skills,.Power-skills{
+        display: none;
+    }
+    .display{
+        display: block;
     }
 }
 @media screen and (max-width:500px){
